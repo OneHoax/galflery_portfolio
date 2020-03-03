@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Gallery Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icons8-balance-symbol-50.png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab848f62eb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery script that allows scrolling to diff sections when using the nav links -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+</head>
+
+<body id="top">
+    <header>
+        <!-- _blank means a new window opens up when somebody clicks on it -->
+        <img src="img/icons8-zen-symbol-50.png", alt="">
+        <nav>
+            <ul>
+                <!-- # means when you click on this link go to this same page -->
+                <!-- #something means stay on the same page but go to the id of something -->
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#getting-around">Travel</a></li>
+                <li><a href="#famous-quotes">Quotes</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social-media">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ***************************** -->
+
+    <div id="hero">
+        <div class="background-image"></div>
+        <h1>Photo Gallery Portfolio</h1>
+        <h3>Breathtaking Landscapes for Your Viewing Pleasure</h3>
+        <!-- target = _blank forces link to open up in new window -->
+        <a href="https://www.pexels.com" class="btn" target="_blank">More Photos</a>
+    </div>
+
+    <!-- ***************************** -->
+
+    <div id="about">
+        <h3 class="title">About Me</h3>
+        <div id="two-cols">
+            <div class="about-img"><img src="img/about.jpg" alt="thumbs up"></div>
+            <div class="about-bio">
+                <p>
+                    Grew up playing soccer but love being active and competitive in general.
+                    Avid learner and always striving for excellence in everything I do.
+                    Passionate about human behaviour, problem solving, technology and self-expression.
+                    A background in Behavioural science and experience in various other fields have
+                    taught me the right professional and personal skills needed to succeed in the technology world.
+                    My professional experience and education in Computer science provide me with the perfect
+                    balance between simplicity and intellect to solve real-world problems with geniune solutions.
+                </p>
+            </div>
+            <p>&nbsp;</p> <!-- non-breaking space: pushes things down a whole line -->
+        </div>
+    </div>
+
+    <!-- ***************************** -->
+
+    <hr> <!-- horizontal rule -->
+    <div id="gallery" class="photo-gallery">
+        <h3 class="title">Gallery</h3>
+        <p>
+            Released under the CC0 license, Pexels helps people to get access to beautiful photos that they can use
+            freely in projects like websites, blogs, products or book covers. Some of the best free stock photos are at
+            Pexels.
+        </p>
+        <ul class="grid">
+            <li class="small" style="background-image: url('img/alaska-wilderness-sky-aurora-borealis.jpg')"></li>
+            <li class="large" style="background-image: url('img/glacier.jpg')"></li>
+            <li class="small" style="background-image: url('img/alaska-glacier-ice-mountains.jpg')"></li>
+            <li class="large" style="background-image: url('img/clouds.jpg')"></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- ***************************** -->
+
+    <div id="getting-around">
+        <h3 class="title">Ways of Traveling</h3>
+        <p>
+            Here are three ways you can use to travel around Alaska represented by font awesome icons. There are many
+            more ways of traveling, but here are three that fit nicely in this section and have icons that you can
+            manipulate like fonts in CSS.
+        </p>
+        <ul class="grid">
+            <li>
+                <i class="fas fa-plane ico"></i>
+                <h4>Airplane</h4>
+                <p>
+                    A powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.
+                </p>
+            </li>
+            <li>
+                <i class="fas fa-ship ico"></i>
+                <h4>Cruise Ships</h4>
+                <p>
+                    A passenger ship used for pleasure voyages, where the voyage itself and the ship's amenities are a
+                    part of the experience.
+                </p>
+            </li>
+            <li>
+                <i class="fas fa-taxi ico"></i>
+                <h4>Taxis</h4>
+                <p>
+                    A motor vehicle licensed to transport passengers in return for payment of a fare.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- ***************************** -->
+
+    <div id="famous-quotes">
+        <h3 class="title">What Others Are Saying</h3>
+        <p class="portrait"><img src="img/dickens.jpg" , alt="Charles Dickens" , class="portrait-photos"></p>
+        <p class="quote">&ldquo;No one is useless in this world who lightens the burden of it to anyone else.&rdquo;</p>
+        <p class="author">&mdash; Charles Dickens</p>
+        <p class="portrait"><img src="img/franklin.jpg" , alt="Benjamin Franklin" , class="portrait-photos"></p>
+        <p class="quote">&ldquo;An investment in knowledge pays the best interest.&rdquo;</p>
+        <p class="author">&mdash; Benjamin Franklin</p>
+        <p class="portrait"><img src="img/leonardo.jpg" , alt="Leonardo Da Vinci" , class="portrait-photos"></p>
+        <p class="quote">&ldquo;Learning never exhausts the mind.&rdquo;</p>
+        <p class="author">&mdash; Leonardo Da Vinci</p>
+    </div>
+    <hr>
+
+    <!-- ***************************** -->
+
+    <div id="contact">
+        <h3 class="title">My Studio Location</h3>
+        <section class="flexbox-section">
+            <p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11544.395870841576!2d-79.3690824!3d43.6669115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb513d9d115b%3A0xf50a6ec15047d372!2s77%20Howard%20St%2C%20Toronto%2C%20ON%20M4X%201J9!5e0!3m2!1sen!2sca!4v1567035663650!5m2!1sen!2sca"
+                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </p>
+            <p>
+                77 Howard St. <br>
+                Toronto, ON, CA <br>
+                M4X 1J9
+            </p>
+        </section>
+    </div>
+    <hr>
+
+    <!-- ***************************** -->
+
+    <div id="contact-form">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScmAZPJ5DJmdj0Ey75a9GrVK3AmeFnmcRwyKeYKX_QpTS_fsw/viewform?embedded=true"
+            width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <!-- ***************************** -->
+
+    <footer id="social-media">
+        <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+        </ul>
+        <!-- <p>&copy; <script>document.write(new Date().getFullYear());</script> It sure is fun to create websites.</p> -->
+        <p>&ldquo;Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo;<br>&mdash;Benjamin
+            Franklin</p>
+    </footer>
+    <!-- Allows all html and css to be loaded before any jquery script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
